@@ -48,7 +48,7 @@ const handleMenu = ()=> {
           <div className="flex mt-1 mx:mt-2 mx:justify-between mx:pr-8">
             <div className="flex gap-1">
               <div>
-                <Image src={icon} alt="Icon" />
+                <Image src={icon} alt="Icon" className="mx:w-[100%]"/>
               </div>
               <p className="text-xl font-bold">Nexcent</p>
             </div>
