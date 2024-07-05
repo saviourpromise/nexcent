@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import icon from "@/app/images/icons.png";
+import icon from "../../../public/icons.png";
 import white_icon from "@/app/images/white-Icon.png";
 import illustration from "@/app/images/Illustration.png";
 import dot from "@/app/images/Dot.png";
