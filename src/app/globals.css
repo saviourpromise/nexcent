@@ -2,7 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-link {
+  @apply relative no-underline tracking-wide text-gray-900;
+
+  &::after {
+    content: "";
+    @apply absolute bg-[#4CAF4F];
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+  }
+
+  &:hover {
+    @apply text-gray-500;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+.nav{
+  height: 0;
+  visibility: hidden;
+  transition: height 0.5s ease;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+.nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 6px 0;
+  height: 10%;
+  padding: 14px;
+  width: 100%;
+}
+
+.show-nav{
+  height: 61%;
+  background-color: #4CAF4F;
+  /* display: block; */
+  visibility: visible;
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +79,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
