@@ -160,7 +160,6 @@ const handleMenu = ()=> {
           
           </div>
 
-        {Array(1).fill(0).map((_, index) => 
                   <div className="flex mt px-28 justify-between py-20 mx:flex-col mx:py-0 mx:px-0 mx:items-center mx:justify-center">
                   <div className="flex flex-col gap-6 mt-20 mx:items-center mx:justify-center">
                     <p className="text-[58px] leading-none font-semibold text-[#4D4D4D] mx:text-center mx:text-[40px] mx:leading-none">
@@ -175,7 +174,7 @@ const handleMenu = ()=> {
                   </div>
                   <Image src={illustration} className="mx:w-[50%] mx:mt-10" alt="Illustration" />
                 </div>
-        )}
+
 
         <div className="flex justify-center items-center mx:mt-4">
           <Image src={dot} alt="Dot" />
@@ -326,7 +325,7 @@ const handleMenu = ()=> {
 
         <div className="flex flex-col gap-3 pt-12 items-center" id="FAQ">
       <p className="text-4xl font-semibold mx:text-center mx:text-3xl">Caring is the new marketing</p>
-      <p className="text-sm font-medium text-[#717171] text-center mx:text-xs">The Nexcent blog is the best place to read about the latest membership insights, <br /> trends and more. See who's joining the community, read about how our community <br /> are increasing their membership income and lot's more.​</p>
+      <p className="text-sm font-medium text-[#717171] text-center mx:text-xs">The Nexcent blog is the best place to read about the latest membership insights, <br /> trends and more. See who&apos;s joining the community, read about how our community <br /> are increasing their membership income and lot&apos;s more.​</p>
       </div>
 
         <section className="flex px-28 justify-between pt-4 pb-40 mx:flex-col mx:px-0 mx:gap-28 mx:items-center mx:justify-center mx:pt-10">
