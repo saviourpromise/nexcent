@@ -1,36 +1,37 @@
 'use client';
 import Image from "next/image";
-import icon from "@/app/images/icons.png";
-import white_icon from "@/app/images/white-Icon.png";
-import illustration from "@/app/images/Illustration.png";
-import dot from "@/app/images/Dot.png";
-import logo from "@/app/images/Logo.png";
-import logo_1 from "@/app/images/Logo (1).png";
-import logo_2 from "@/app/images/Logo (2).png";
-import logo_3 from "@/app/images/Logo (3).png";
-import logo_4 from "@/app/images/Logo (4).png";
-import logo_5 from "@/app/images/Logo (5).png";
-import logo_6 from "@/app/images/Logo (6).png";
-import member_icon from "@/app/images/member.png";
-import nation_icon from "@/app/images/nation.png";
-import club_icon from "@/app/images/club.png";
-import Illustration_1 from "@/app/images/Illustration_1.png";
-import member_pin from "@/app/images/member-pin.png";
-import club_pin from "@/app/images/club-pin.png";
-import event_pin from "@/app/images/event-pin.png";
-import payment_pin from "@/app/images/payment-pin.png";
-import pana from "@/app/images/pana.png";
-import black from "@/app/images/bold.png";
-import right_arrow from "@/app/images/Right.png";
-import right_arrow_white from "@/app/images/Right-white.png";
-import one from "@/app/images/image 18.png";
-import two from "@/app/images/image 19.png";
-import three from "@/app/images/image 20.png";
-import instagram from "@/app/images/instagram.png";
-import dribble from "@/app/images/dribble.png";
-import twitter from "@/app/images/twitter.png";
-import youtube from "@/app/images/youtube.png";
-import send_icon from "@/app/images/send.png";
+// import icon from "../images/icons.png";
+import icon from '../images/icons.png'
+import white_icon from "../images/white-Icon.png";
+import illustration from "../images/Illustration.png";
+import dot from "../images/Dot.png";
+import logo from "../images/Logo.png";
+import logo_1 from "../images/Logo (1).png";
+import logo_2 from "../images/Logo (2).png";
+import logo_3 from "../images/Logo (3).png";
+import logo_4 from "../images/Logo (4).png";
+import logo_5 from "../images/Logo (5).png";
+import logo_6 from "../images/Logo (6).png";
+import member_icon from "../images/member.png";
+import nation_icon from "../images/nation.png";
+import club_icon from "../images/club.png";
+import Illustration_1 from "../images/Illustration_1.png";
+import member_pin from "../images/member-pin.png";
+import club_pin from "../images/club-pin.png";
+import event_pin from "../images/event-pin.png";
+import payment_pin from "../images/payment-pin.png";
+import pana from "../images/pana.png";
+import black from "../images/bold.png";
+import right_arrow from "../images/Right.png";
+import right_arrow_white from "../images/Right-white.png";
+import one from "../images/image 18.png";
+import two from "../images/image 19.png";
+import three from "../images/image 20.png";
+import instagram from "../images/instagram.png";
+import dribble from "../images/dribble.png";
+import twitter from "../images/twitter.png";
+import youtube from "../images/youtube.png";
+import send_icon from "../images/send.png";
 import { useState } from "react";
 
 const Home = () => {
@@ -160,21 +161,22 @@ const handleMenu = ()=> {
           
           </div>
 
-        <div className="flex mt px-28 justify-between py-20 mx:flex-col mx:py-0 mx:px-0 mx:items-center mx:justify-center">
-          <div className="flex flex-col gap-6 mt-20 mx:items-center mx:justify-center">
-            <p className="text-[58px] leading-none font-semibold text-[#4D4D4D] mx:text-center mx:text-[40px] mx:leading-none">
-              Lessons and insights <br /> <span className="text-[#4CAF4F]">from 8 years</span>
-            </p>
-            <p className="text-sm font-medium text-[#717171] mx:text-center mx:text-xs mx:font-semibold">
-              Where to grow your business as a photographer: site or social media?
-            </p>
-            <button className="text-sm font-medium text-white bg-[#4CAF4F] p-4 rounded-md w-[8rem] hover:text-[#4CAF4F] hover:bg-white hover:border-[#4CAF4F] hover:border">
-              Register
-            </button>
-          </div>
-
-          <Image src={illustration} className="mx:w-[50%] mx:mt-10" alt="Illustration" />
-        </div>
+        {Array(1).fill(0).map((_, index) => 
+                  <div className="flex mt px-28 justify-between py-20 mx:flex-col mx:py-0 mx:px-0 mx:items-center mx:justify-center">
+                  <div className="flex flex-col gap-6 mt-20 mx:items-center mx:justify-center">
+                    <p className="text-[58px] leading-none font-semibold text-[#4D4D4D] mx:text-center mx:text-[40px] mx:leading-none">
+                      Lessons and insights <br /> <span className="text-[#4CAF4F]">from 8 years</span>
+                    </p>
+                    <p className="text-sm font-medium text-[#717171] mx:text-center mx:text-xs mx:font-semibold">
+                      Where to grow your business as a photographer: site or social media?
+                    </p>
+                    <button className="text-sm font-medium text-white bg-[#4CAF4F] p-4 rounded-md w-[8rem] hover:text-[#4CAF4F] hover:bg-white hover:border-[#4CAF4F] hover:border">
+                      Register
+                    </button>
+                  </div>
+                  <Image src={illustration} className="mx:w-[50%] mx:mt-10" alt="Illustration" />
+                </div>
+        )}
 
         <div className="flex justify-center items-center mx:mt-4">
           <Image src={dot} alt="Dot" />
@@ -425,7 +427,7 @@ const handleMenu = ()=> {
         <p className="text-xl font-bold text-white">Stay up to date</p>
         <div className="relative">
         <input type="email" placeholder="Your email address" className="bg-gray-600 p-2 placeholder:text-sm placeholder:font-medium placeholder:text-[#dadcdd] pl-3 rounded-lg text-white w-72 mx:w-60"/>
-        <Image src={send_icon} className="absolute top-3 left-[13rem]"/>
+        <Image src={send_icon} className="absolute top-3 left-[16rem] mx:left-[13rem]"/>
         </div>
         </div>
         </div>
